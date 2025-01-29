@@ -25,6 +25,18 @@ namespace FundraisingApp
             InitializeComponent();
         }
 
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void NavigateToDashboard_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
         private void AddUserButton_Click(object sender, RoutedEventArgs e)
         {
             string Login = UsernameTextBox.Text;
