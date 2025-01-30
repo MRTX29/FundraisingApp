@@ -12,6 +12,7 @@ public class FundraisingContext(DbContextOptions<FundraisingContext> options) : 
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<User>().Property(u => u.Role).HasConversion<string>();
+        modelBuilder.Entity<User>().Property(u => u.Id).ValueGeneratedOnAdd();
         modelBuilder.Entity<MoneyBox>().OwnsOne(mb => mb.Denominations);
     }
 }
