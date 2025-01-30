@@ -9,18 +9,20 @@
       Title="AddUserPage" Background="White">
 
     <Grid>
-        <Border Background="#2D2D2D" BorderThickness="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="720">
+        <StackPanel Background="#2D2D2D" HorizontalAlignment="Center" VerticalAlignment="Top" Height="440" Width="700" Margin="0, 10, 0, 0">
             <DockPanel>
                 <StackPanel>
                     <TextBlock Text="Administrator" FontSize="20" Margin="20, 10, 0, 0" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Left" TextAlignment="Left"/>
-                    <Button Content="Wyloguj" Width="50" Height="25" Margin="20,0,0,0" Click="LogOutButton_Click" HorizontalContentAlignment="Left" Background="#2D2D2D" Foreground="#2471ff" FontFamily="Calibri" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0"/>
+                    <Button Content="Wyloguj" Width="120" Height="25" Margin="20,0,0,0" Click="LogOutButton_Click" HorizontalContentAlignment="Left" Background="#2D2D2D" Foreground="#2471ff" FontFamily="Calibri" HorizontalAlignment="Right" VerticalAlignment="Top" BorderThickness="0"/>
                 </StackPanel>
-                <Button Content="Przejdź na stronę główną" Width="160" Height="25" Margin="0,20,20,0" Click="NavigateToDashboard_Click" Background="#298359" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <Button Content="Przejdź do strony głównej" Width="160" Height="25" Margin="0,20,20,0" Click="NavigateToDashboard_Click" Background="#298359" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Right" VerticalAlignment="Top"/>
             </DockPanel>
-        </Border>
-        <Border Background="#2D2D2D" BorderThickness="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="340" Width="720">
-            <DockPanel Height="300" VerticalAlignment="Top">
-                <TextBlock Text="Dodaj użytkownika" Width="160" Height="25" FontSize="20" Margin="20, 10, 0, 0" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center"/>
+
+            <Line  X1="0" Y1="0" X2="700" Y2="0" Stroke="White" StrokeThickness="2" VerticalAlignment="Stretch"></Line>
+
+            <TextBlock Text="Dodaj użytkownika" FontSize="18" Foreground="White" Margin="20,10,0,10"/>
+            
+            <DockPanel Height="300" VerticalAlignment="Top" HorizontalAlignment="Center">
                 <StackPanel Background="#2D2D2D" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
                     <Label Content="Nazwa użytkownika" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Left"/>
                     <TextBox Name="UsernameTextBox" Width="200" Height="25" FontFamily="Calibri" Margin="0,5,0,0" TextAlignment="Left" VerticalContentAlignment="Center"/>
@@ -32,7 +34,6 @@
                     <Button Content="Dodaj" Width="100" Height="25" Margin="0,20,0,0" Click="AddUserButton_Click" Background="#298359" Foreground="White" FontFamily="Calibri" HorizontalAlignment="Right"/>
                 </StackPanel>
             </DockPanel>
-        </Border>
-
+        </StackPanel>
     </Grid>
 </Page>
