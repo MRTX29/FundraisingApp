@@ -26,7 +26,12 @@ namespace FundraisingApp
         }
 
 
-
+        /// <summary>
+        /// Handles the click event of the "Oblicz" button.
+        /// Calculates the total sum of the denominations entered in the text boxes.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void OnObliczClicked(object sender, RoutedEventArgs e)
         {
             int val500 = GetValueFromTextBox(value500);
@@ -53,6 +58,11 @@ namespace FundraisingApp
             valueTotalSum.Text = $"Suma: {totalSum} zł";
         }
 
+        /// <summary>
+        /// Retrieves the integer value from the specified TextBox.
+        /// </summary>
+        /// <param name="textBox">The TextBox from which to retrieve the value.</param>
+        /// <returns>The integer value if parsing is successful; otherwise, 0.</returns>
         private int GetValueFromTextBox(TextBox textBox)
         {
             if (int.TryParse(textBox.Text, out int result))

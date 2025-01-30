@@ -25,6 +25,11 @@ namespace FundraisingApp
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the Login button.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameTextBox.Text;

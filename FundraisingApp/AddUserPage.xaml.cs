@@ -36,7 +36,12 @@ namespace FundraisingApp
 
         }
 
-
+        /// <summary>
+        /// Handles the click event of the "Add User" button.
+        /// Retrieves the username, password, and role from the input fields and processes the user addition.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void AddUserButton_Click(object sender, RoutedEventArgs e)
         {
             string Login = UsernameTextBox.Text;
